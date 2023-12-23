@@ -1,0 +1,14 @@
+{% block body %}
+    <div class="login-wrapper">
+        <h1>Connexion</h1>
+        <form method="post" action="{{ path('login') }}">
+            <label for="username">Nom d'utilisateur</label>
+            <input type="text" id="username" name="_username" required="required" />
+
+            <label for="password">Mot de passe</label>
+            <input type="password" id="password" name="_password" required="required" />
+
+            <button type="submit">Se connecter</button>
+        </form>
+    </div>
+{% endblock %}
